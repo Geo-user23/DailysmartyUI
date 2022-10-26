@@ -21,6 +21,15 @@
    justify-items: center;
 }
 
+.logo-main,
+.recent-posts
+{
+    display: grid;
+    justify-items: center;
+}
+
+
+
 $color-gray-one: grey;
 $color-gray-two: #b3b3b3;
 
