@@ -1,8 +1,7 @@
 import {
     SET_RECENT_POSTS,
-     SET_RESULTS_POSTS
+    SET_RESULTS_POSTS
 } from '../actions/types';
-import resultsPosts from '../components/resultsPosts';
 
 const INIT_STATE = {
     resultsPosts: [],
@@ -18,11 +17,11 @@ export default function(state = INIT_STATE, action) {
                     recentPosts
                 }
         case SET_RESULTS_POSTS:
-            const resultsPosts = action.payload;
-            return {
-                ...state,
-                posts: resultsPosts
-            }
+                const resultsPosts = action.payload;
+                return {
+                    ...state, 
+                    resultsPosts
+                }
         default:
             return state;
     }
