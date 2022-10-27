@@ -15,10 +15,9 @@
 .home {
    height: 100vh;
    width: 66vw;
-
    display: grid;
    align-content: space-around;
-   justify-items: center;
+   
 }
 
 .logo-main,
@@ -28,9 +27,18 @@
     justify-items: center;
 }
 
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
 
 
 $color-gray-one: grey;
 $color-gray-two: #b3b3b3;
+$color-blue-one: #0079FF;
+
 
 @import "./searchBar.scss";
+@import "./recentPosts.scss";
